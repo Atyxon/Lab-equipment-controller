@@ -1,0 +1,1820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#1f1d2c;
+font: 75 9pt &quot;Trebuchet MS&quot;;</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-4</x>
+      <y>-1</y>
+      <width>1031</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>9</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane {
+}
+QTabBar::tab {
+    padding: 15px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+    background: #262837;
+	color: rgb(239, 239, 239);
+border-top-right-radius: 10px 10px;
+border-top-left-radius: 10px 10px;
+}
+
+QTabBar::tab:selected {
+    background: #2e303f;
+	background-color: #2e303f;
+	color: rgb(239, 239, 239);
+}
+QTabBar::tab:hover {
+    background: #181722;
+}
+</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_starting_page">
+     <property name="styleSheet">
+      <string notr="true">background-color: #2e303f;</string>
+     </property>
+     <attribute name="title">
+      <string>Starting Page</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>991</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 75 15pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;ⓘ&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Select Lab equipment &lt;br/&gt;from settings to start&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>200</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_RigolDp832">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2e303f;</string>
+     </property>
+     <attribute name="title">
+      <string>Rigol DP832</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>0</y>
+        <width>951</width>
+        <height>280</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_channel_1">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="pushButton_ovp_channel_1">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 5px;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QLabel" name="label_channel_1">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>14</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 14pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Channel 1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QPushButton" name="pushButton_enable_channel_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>130</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 10px;
+font: 75 11pt &quot;Trebuchet MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_ovp_channel_1">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> V</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>30.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QPushButton" name="pushButton_ocp_channel_1">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 5px;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_current_channel_1">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Current</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_voltage_channel_1">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Voltage</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_ocp_channel_1">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>OCP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_ovp_channel_1">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>OVP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="5" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_ocp_channel_1">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> A</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>3.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="2">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_voltage_channel_1">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> V</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>30.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_current_channel_1">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> A</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>3.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0" colspan="4">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_voltage_measured_values_1">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 V</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_current_measured_values_1">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 A</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_power_measured_values_1">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 W</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_cvcc_1">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+             </property>
+             <property name="text">
+              <string>CV</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="led_cvcc_1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(0, 255, 127)</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../../Desktop/leb_disabled - Copy.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_channel_2">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_voltage_channel_2">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Voltage</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="pushButton_ovp_channel_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 5px;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QPushButton" name="pushButton_enable_channel_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>130</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 10px;
+font: 75 11pt &quot;Trebuchet MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QLabel" name="label_channel_2">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>14</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 14pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Channel 2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QPushButton" name="pushButton_ocp_channel_2">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 5px;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_current_channel_2">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Current</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_ovp_channel_2">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> V</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>30.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_ovp_channel_2">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>OVP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_ocp_channel_2">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>OCP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_ocp_channel_2">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> A</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>3.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_current_channel_2">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> A</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>3.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0" colspan="4">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="pushButton_voltage_measured_values_2">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 V</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_current_measured_values_2">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 A</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_power_measured_values_2">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 W</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="1" colspan="2">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_voltage_channel_2">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> V</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>30.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_cvcc_2">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+             </property>
+             <property name="text">
+              <string>CV</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="led_cvcc_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(0, 255, 127)</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../../Desktop/leb_disabled - Copy.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_channel_3">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="pushButton_ovp_channel_3">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 5px;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QLabel" name="label_channel_3">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>14</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 14pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Channel 3</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" colspan="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QPushButton" name="pushButton_enable_channel_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>130</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 10px;
+font: 75 11pt &quot;Trebuchet MS&quot;;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_ovp_channel_3">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> V</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>30.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QPushButton" name="pushButton_ocp_channel_3">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(244, 244, 244);
+background-color: #1f1d2c;
+border-radius: 10px;
+padding: 5px;</string>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_current_channel_3">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Current</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_voltage_channel_3">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>Voltage</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_ocp_channel_3">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>OCP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_ovp_channel_3">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+           </property>
+           <property name="text">
+            <string>OVP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="5" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_ocp_channel_3">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> A</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>3.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="2">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_voltage_channel_3">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> V</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>5.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_current_channel_3">
+           <property name="font">
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>9</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDoubleSpinBox
+{
+border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;
+}</string>
+           </property>
+           <property name="suffix">
+            <string> A</string>
+           </property>
+           <property name="decimals">
+            <number>3</number>
+           </property>
+           <property name="maximum">
+            <double>3.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0" colspan="4">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="pushButton_voltage_measured_values_3">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 V</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_current_measured_values_3">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 A</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_power_measured_values_3">
+             <property name="styleSheet">
+              <string notr="true">border : 3px solid #1f1d2c;
+color: rgb(250, 250, 250);
+background-color: #262837;
+border-radius: 5px;
+padding: 1px;</string>
+             </property>
+             <property name="text">
+              <string>0.000 W</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_cvcc_3">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(243, 243, 243);</string>
+             </property>
+             <property name="text">
+              <string>CV</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="led_cvcc_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 75 11pt &quot;Trebuchet MS&quot;;
+color: rgb(0, 255, 127)</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../../../Desktop/leb_disabled - Copy.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="PlotWidget" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>300</y>
+        <width>951</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(239, 239, 239);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_Keithley2308">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2e303f;</string>
+     </property>
+     <attribute name="title">
+      <string>Keithley 2308</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_ItechIT">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2e303f;</string>
+     </property>
+     <attribute name="title">
+      <string>Itech IT8512</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_RigolDS1054">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2e303f;</string>
+     </property>
+     <attribute name="title">
+      <string>Rigol DS1054</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Multimeter">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2e303f;</string>
+     </property>
+     <attribute name="title">
+      <string>Multimeter 34401A</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Siglent">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2e303f;</string>
+     </property>
+     <attribute name="title">
+      <string>Siglent SDG2122X</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Trebuchet MS</family>
+     <pointsize>9</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar::item {
+padding: 10px;
+padding-bottom: 5px;
+padding-top: 5px;
+border-bottom: 1px solid #1f1d2c;
+background-color: #262837;
+border-bottom-right-radius: 10px 10px;
+border-bottom-left-radius: 10px 10px;
+}
+:enabled {color: rgb(235, 235, 235);
+				selection-background-color: #181721;}
+:disabled {color: rgb(105, 105, 105);
+				selection-background-color: #181721;}</string>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="styleSheet">
+     <string notr="true">background-color: #262837;</string>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuChoose_lab_equipment">
+     <property name="title">
+      <string>Choose lab equipment</string>
+     </property>
+     <addaction name="settings_check_Rigol_DP832"/>
+     <addaction name="settings_check_Keithley_2308"/>
+     <addaction name="settings_check_Itech_IT8512"/>
+     <addaction name="settings_check_Rigol_DS1054"/>
+     <addaction name="settings_check_Multimeter_34401A"/>
+     <addaction name="settings_check_Siglent_SDG2122X"/>
+    </widget>
+    <addaction name="menuChoose_lab_equipment"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="styleSheet">
+     <string notr="true">background-color: #262837;</string>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionOpen_Controller_Repository"/>
+    <addaction name="actionOpen_Drivers_Repository"/>
+   </widget>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionOpen_Controller_Repository">
+   <property name="text">
+    <string>Open Controller Repository</string>
+   </property>
+  </action>
+  <action name="settings_check_Rigol_DP832">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Rigol DP832</string>
+   </property>
+  </action>
+  <action name="settings_check_Keithley_2308">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Keithley 2308</string>
+   </property>
+  </action>
+  <action name="settings_check_Itech_IT8512">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Itech IT8512</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="settings_check_Rigol_DS1054">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Rigol DS1054</string>
+   </property>
+  </action>
+  <action name="settings_check_Multimeter_34401A">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Multimeter 34401A</string>
+   </property>
+  </action>
+  <action name="settings_check_Siglent_SDG2122X">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Siglent SDG2122X</string>
+   </property>
+  </action>
+  <action name="actionOpen_Drivers_Repository">
+   <property name="text">
+    <string>Open Drivers Repository</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
