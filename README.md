@@ -15,6 +15,9 @@ Visualisation of Rigol DP832 Power Supply controll panel:
 <img src="https://user-images.githubusercontent.com/75041222/216007440-355c39b1-ff14-44c3-bd42-5c8c1c1b2197.png" width="440" height="325">
 
 
+Script made for handling UI elements is **application.py**, all equipment drivers are inside **Drivers** folder, and example usage of these drivers is inside **Examples** folder
+
+
 ## How to use	
 Run application.py and select your devices from options > Choose Lab Equipment
 
